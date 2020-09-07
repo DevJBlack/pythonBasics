@@ -47,3 +47,33 @@ Given the string hello, give two methods of producing the letter 'o' using index
 s ='hello'
 s[-1]
 s[-1:]
+
+
+
+d = {'simple_key':'hello'}
+# Grab 'hello'
+
+d['simple_key']
+
+'hello'
+
+d = {'k1':{'k2':'hello'}}
+# Grab 'hello'
+
+d['k1']['k2']
+
+'hello'
+
+# Getting a little tricker
+d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+
+# This was harder than I expected...
+d['k1'][0]['nest_key'][1][0]
+
+'hello'
+
+# This will be hard and annoying!
+d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+
+# Phew!
+d['k1'][2]['k2'][1]['tough'][2][0]
