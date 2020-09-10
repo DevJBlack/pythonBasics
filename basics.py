@@ -77,3 +77,47 @@ d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
 
 # Phew!
 d['k1'][2]['k2'][1]['tough'][2][0]
+
+
+
+# if, elif and else, have whitespace and do not use curly brackets. They also do not use || or && but use the words "or" and "and"
+
+hungry = False
+
+if hungry:
+    print("Feed me!")
+else:
+    print("I already ate")
+
+  loc = "Shop"
+
+if loc == "Auto Shop":
+    print("Cars are the stuff")
+elif loc == "bank" or loc == "Bank":
+    print("Money is cool")
+else:
+    print("I do not know where I am at")  
+
+name = "Frankie"
+names = "Devin Black"
+
+if name == "Frankiln":
+    print("Hello %s" % name)
+elif name == "Devin":
+    print("Devin, Hello")
+else:
+    print(f"What is your name? : It is {name}")
+
+
+# FizzBuzz solution, one of them
+list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+for newList in list:
+    if newList%3 == 0 and newList%5 == 0:
+        print("FizzBuzz")
+    elif newList%5 == 0:
+        print("Buzz")
+    elif newList%3 == 0:
+        print("Fizz")
+    else:
+        print(newList)
