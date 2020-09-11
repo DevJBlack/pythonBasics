@@ -121,3 +121,14 @@ for newList in list:
         print("Fizz")
     else:
         print(newList)
+
+# ============================================
+# First number is where it starts, second number is where it is going to, the thrid number is how many steps it will take.
+# This example with start at 50, go in steps of 10 and end at 100
+# 50, 60, 70, 80, 90,100
+
+for num in range(50, 101, 10):
+    print(num)
+
+for ky in range(100,1):
+    print(ky)
