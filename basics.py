@@ -132,3 +132,10 @@ for num in range(50, 101, 10):
 
 for ky in range(100,1):
     print(ky)
+
+# Spaces in python is everything!
+# With Python you can put all data types in lists, which is like an array in JS and splice in Golang
+everything = [1,2,3,"Four",[5,6,7]]
+
+for every in everything:
+    print(every)
