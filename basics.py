@@ -139,3 +139,23 @@ everything = [1,2,3,"Four",[5,6,7]]
 
 for every in everything:
     print(every)
+# Doing a nested for loop in python and appending the numbers to an empty list
+emptylist = []
+mylist = [2,4,6]
+secondlist = [1,2,1000]
+
+for x in mylist:
+    for y in secondlist:
+        emptylist.append(x*y)
+
+# Converting celcius to fahrenheit via looping and appending in an empty list
+celcius = [0,8,10,20,48]
+fah = []
+
+for temp in celcius:
+    fah.append(((9/5)*temp + 32))
+
+# Converiting celcius to fahrenheit via flat loop
+celcius = [0,8,10,20,48]
+
+fahrenheit = [((9/5)*temp + 32) for temp in celcius]
