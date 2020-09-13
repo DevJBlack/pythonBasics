@@ -1,49 +1,49 @@
-Test your knowledge.
-Answer the following questions
+# Test your knowledge.
+# Answer the following questions
 
-Write (or just say out loud to yourself) a brief description of all the following Object Types and Data Structures we've learned about. You can edit the cell below by double clicking on it. Really this is just to test if you know the difference between these, so feel free to just think about it, since your answers are self-graded.
+# Write (or just say out loud to yourself) a brief description of all the following Object Types and Data Structures we've learned about. You can edit the cell below by double clicking on it. Really this is just to test if you know the difference between these, so feel free to just think about it, since your answers are self-graded.
 
-Double Click HERE to edit this markdown cell and write answers.
+# Double Click HERE to edit this markdown cell and write answers.
 
-Numbers: Numbers in python is whole numbers, examples (100, 200,1,2,3,4)
+# Numbers: Numbers in python is whole numbers, examples (100, 200,1,2,3,4)
 
-Strings: Strings can be in double quote or single quote in python "Hello world" 'hello world'
+# Strings: Strings can be in double quote or single quote in python "Hello world" 'hello world'
 
-Lists: Lists are muteable data and can be ordered example [1,2,3,4,5] they are also in sqaure brackets
+# Lists: Lists are muteable data and can be ordered example [1,2,3,4,5] they are also in sqaure brackets
 t = [1,2,3,4,5]
 t[0] = 4
 t = [4,2,3,4,5]
-This is ok in lists
+# This is ok in lists
 
-Tuples: Tuples are similar like lists, but Tuples are in () and are immutable, they cant be changed.
-tuple = (1,2,3,4,5)
-tuple[1] = 5
-would give an error
+# Tuples: Tuples are similar like lists, but Tuples are in () and are immutable, they cant be changed.
+tuples = (1,2,3,4,5)
+# tuples[1] = 5
+# would give an error
 
-Dictionaries: Dict are key value pairs, they are unsorted, but you can call them by values or keys
+# Dictionaries: Dict are key value pairs, they are unsorted, but you can call them by values or keys
 dict = {"key1":"value", "key2":1.99,"key3": 1}
 
-Numbers
-Write an equation that uses multiplication, division, an exponent, addition, and subtraction that is equal to 100.25.
+# Numbers
+# Write an equation that uses multiplication, division, an exponent, addition, and subtraction that is equal to 100.25.
 
 Solution: 2**2*4+300.50/2-66
 
-Hint: This is just to test your memory of the basic arithmetic commands, work backwards from 100.25
+# Hint: This is just to test your memory of the basic arithmetic commands, work backwards from 100.25
 
 
-Given the string 'hello' give an index command that returns 'e'. Enter your code in the cell below:
+# Given the string 'hello' give an index command that returns 'e'. Enter your code in the cell below:
 
 
 s = 'hello'
-x
+
 s[1]
 
-Reverse the string 'hello' using slicing:
+# Reverse the string 'hello' using slicing:
 s[::-1]
 
 
 
-Given the string hello, give two methods of producing the letter 'o' using indexing.
+# Given the string hello, give two methods of producing the letter 'o' using indexing.
 s ='hello'
 s[-1]
 s[-1:]
@@ -89,7 +89,7 @@ if hungry:
 else:
     print("I already ate")
 
-  loc = "Shop"
+loc = "Shop"
 
 if loc == "Auto Shop":
     print("Cars are the stuff")
