@@ -31,9 +31,6 @@ three
 
 # Go through the string below and if the length of a word is even print "even!"
 
-
-# st = 'Print every word in this sentence that has an even number of letters'
-
 st = 'Print every word in this sentence that has an even number of letters nothing odd will be printed'
 even = st.split(" ")
 
@@ -63,3 +60,5 @@ x = vt.split(" ")
 
 for lc in x:
      print(lc[0])
+
+[word[0] for word in vt.split()]
