@@ -159,3 +159,12 @@ for temp in celcius:
 celcius = [0,8,10,20,48]
 
 fahrenheit = [((9/5)*temp + 32) for temp in celcius]
+
+
+st = 'Print only the words that start with s in this sentence'
+x = st.split(" ")
+
+
+for sletter in x:
+    if sletter[0].upper() == "p":
+        print(sletter)
