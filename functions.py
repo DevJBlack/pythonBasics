@@ -30,3 +30,37 @@ def myfunc(a,b):
     return a + b
 newresult = myfunc(1,2)
 
+# =============================
+def evenCheck(number):
+    result = number % 2 == 0
+    return result
+    # Or for cleaner code
+    # return number % 2 == 0 // Same code
+evenCheck(20)
+
+def checkEvenList(numList):
+
+    for number in numList:
+        if number % 2 == 0:
+            return True
+        else:
+            pass
+    return False
+
+checkEvenList([1,3,5])
+checkEvenList([2,4])
+checkEvenList([1,2,3,4,5,6])
+
+def evenList(listNum):
+    # Placeholder variables
+    evenNumber = []
+
+    for number in listNum:
+        if number % 2 == 0:
+            evenNumber.append(number)
+        else:
+            pass
+    
+    return evenNumber
+
+evenList([1,2,3,4,5])
