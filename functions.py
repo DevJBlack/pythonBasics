@@ -64,3 +64,30 @@ def evenList(listNum):
     return evenNumber
 
 evenList([1,2,3,4,5])
+
+
+stockPrices = [("appl",200), ("goog",400),("msft",100)]
+
+for ticker,price in stockPrices:
+    print(ticker)
+
+for ticker,price in stockPrices:
+    print(price+(0.1*price))
+
+workHours = [("Abby", 1000), ("Billy",400), ("Cassie", 800)]
+
+def employeeCheck(workHours):
+    currentMax = 0
+    employeeOfMonth = ""
+
+    for employee,hours in workHours:
+        if hours > currentMax:
+            currentMax = hours
+            employeeOfMonth = employee
+        else:
+            pass
+    
+    return(employeeOfMonth, currentMax)
+
+name,hours = employeeCheck(workHours)
+print(name, hours)
