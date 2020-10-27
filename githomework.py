@@ -82,3 +82,19 @@ def old_mac(name):
     first_part = name[:3]
     second_part = name[3:]
     return first_part.capitalize() + second_part.capitalize()
+mac = old_mac("macdonald")
+print(mac)
+
+print("###########################")
+
+def master_yoda(text):
+    worldlist = text.split()
+    reverse_word_list = worldlist[::-1]
+    return " ".join(reverse_word_list)
+yoda_text = master_yoda("I am home")
+print(yoda_text)
+
+def almost_there(n):
+    return (abs(100-n) <= 10) or (abs(200-n) <= 10)
+there = almost_there(150)
+print(there)
