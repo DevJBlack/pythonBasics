@@ -75,3 +75,10 @@ def makes_twenty(n1,n2):
     #     return False
 twenty = makes_twenty(10,20)
 print(twenty)
+
+print("############################")
+
+def old_mac(name):
+    first_part = name[:3]
+    second_part = name[3:]
+    return first_part.capitalize() + second_part.capitalize()
