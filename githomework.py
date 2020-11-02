@@ -98,3 +98,35 @@ def almost_there(n):
     return (abs(100-n) <= 10) or (abs(200-n) <= 10)
 there = almost_there(150)
 print(there)
+
+print("###########################")
+
+def has_33(nums):
+    for i in range(0,len(nums)-1):
+        if nums[i] == 3 and nums[i+1] == 3:
+            return True
+    return False
+thirty = has_33([1,3,3])
+print(thirty)
+
+print("###########################")
+
+def paper_doll(text):
+    result = ""
+    for char in text:
+        result += char*3
+    return result
+paper = paper_doll("Hello")
+print(paper)
+
+print("###########################")
+
+def blackjack(a,b,c):
+    if sum([a,b,c]) <= 21:
+        return sum([a,b,c])
+    elif 11 in [a,b,c] and sum([a,b,c]) <= 31:
+        return sum([a,b,c])-10
+    else:
+        return "BUST"
+jack = blackjack(5,6,7)
+print(jack)
