@@ -130,3 +130,21 @@ def blackjack(a,b,c):
         return "BUST"
 jack = blackjack(5,6,7)
 print(jack)
+
+print("###########################")
+print("This is the even_odd function")
+def even_odd( x ):
+    if (x % 2 == 0):
+        return True
+    else:
+        return False
+eo = even_odd(10)
+print(eo)
+
+print("###########################")
+my_number = input(print("Input a number:"))
+if int(my_number)%2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+    
