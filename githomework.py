@@ -142,9 +142,70 @@ eo = even_odd(10)
 print(eo)
 
 print("###########################")
-my_number = input(print("Input a number:"))
-if int(my_number)%2 == 0:
-    print("The number is even")
-else:
-    print("The number is odd")
+# my_number = input(print("Input a number:"))
+# if int(my_number)%2 == 0:
+#     print("The number is even")
+# else:
+#     print("The number is odd")
+
+def summer_69(arr):
+    total = 0
+    add = True
+    for num in arr:
+        while add:
+            if num!=6:
+                total += num
+                break
+            else:
+                add = False
+        while not add:
+            if num != 9:
+                break
+            else:
+                add = True
+                break
+    return total
+sum69 = summer_69([2,1,6,9,11])
+print(sum69)
     
+print("#################### Challange problems")
+
+def spy_game(nums):
+
+    code = [0,0,7, "x"]
+
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
+    return len(code) == 1
+# sg = spy_game([1,2,3,0,0,7,6]) # True
+# sg = spy_game([1,0,2,4,0,5,7]) # True
+sg = spy_game([1,7,2,0,4,5,8]) # False
+print(sg)
+
+print("####################")
+
+def count_primes(num):
+    # Check for zero or one
+    if num < 2:
+        return 0
+    # 2 or greater
+    # 
+    # Store our prime numbers
+    primes = [2]
+    # Counter going up to the input num
+    x = 3
+    # X is going through every nmber up to the input num
+    while x <= num:
+        # Check if x is prime
+        for y in range(3,x,2):
+            if x%y == 0:
+                x += 2
+                break
+        else:
+            primes.append(x)
+            x += 2
+    print(primes)
+    return len(primes)
+cp = count_primes(100)
+print(cp)
